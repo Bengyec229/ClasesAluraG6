@@ -1,0 +1,119 @@
+body {
+background: #f3f5fc;
+}
+.header {
+    width: 90%;
+    margin: auto;
+}
+.header_logo {
+    max-width: 100px;
+}
+main {
+    display: flex;
+}
+.izq {
+    width: 60%;
+}
+
+.der {
+    width: 25%;
+    background-color: white;
+    border-radius: 32px;
+    padding: 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+
+.muneco {
+    width: 100%;
+}
+
+.txtarea {
+    width: 90%;
+    height: 75%;
+    margin-left:  3%;
+    font-size: 40px;
+    color: #0a3871;
+    border: none;
+    outline: none;
+    resize: none;
+    background: #f3f5fc;
+}
+.txtarea::placeholder {
+    font-size: 40px;
+    color: #0a3871;
+}
+.left_btns {
+    margin-left: 5%;
+}
+.adv {
+    display: inline-block;
+}
+button {
+    cursor: pointer;
+}
+.btns {
+    display: flex;
+    gap: 24px;
+    margin-left: 10%;
+}
+.btn_enc {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #0a3871;
+    color: #f3f5fc;
+    font-weight: bold;
+    font-size: 20px;
+}
+.btns_desen {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #0a3871;
+    color: #f3f5fc;
+    font-weight: bold;
+    font-size: 20px;
+}
+.msj-der {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}  
+.msj-info {
+    font-size: 18px;
+    text-align: center;
+}
+.btnCopiar {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #f3f5fc;
+    color: #0a3871;
+    font-weight: bold;
+    font-size: 20px;
+    display: none;
+}
+/* Resposiva*/
+@media screen and (max-width: 850px) {
+    .txtarea {
+        max-height: calc(100vh - 450px);
+    }
+    .muneco {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr max-content;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 440px) {
+    body{
+        background: #5b5c66b8 no-repeat center;
+        background-size: cover;
+    }
+    .header {
+        justify-content: center;
+    }
+}
